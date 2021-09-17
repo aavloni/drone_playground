@@ -3,13 +3,6 @@ type: docker
 name: default
 
 steps:
-  - name: just_a_step_without_any_depends_on
-    image: alpine:latest
-    commands:
-      - echo 'just a step without any depends on'
-      - sleep 20
-      - date +"%H:%M:%S"
-      - echo 'done'
   - name: parallel_sleep_20
     image: alpine:latest
     commands:
