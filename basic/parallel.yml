@@ -38,3 +38,9 @@ steps:
       - parallel_sleep_20
       - parallel_sleep_10
       - parallel_no_sleep
+  - name: last step
+    image: alpine:latest
+    commands:
+      - echo 'this is the last step'
+      - date +"%H:%M:%S"
+      - echo 'done'
