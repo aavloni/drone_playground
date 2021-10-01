@@ -3,7 +3,7 @@ type: docker
 name: default
 
 steps:
-- name: display go version
+- name: display go version 
   image: golang
   pull: if-not-exists
   commands:
